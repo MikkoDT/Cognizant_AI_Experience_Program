@@ -52,41 +52,46 @@ The plan to use this data involves several steps:
 - Handle missing data in sensor readings (such as interpolating for small gaps or using statistical techniques for larger gaps).
 
 2. Feature Engineering:
+- Use sales trends to create demand forecasting features (like moving averages, seasonal patterns).
+- Combine stock level data from sensors with sales data to estimate depletion rates.
+- Incorporate external factors like temperature and its impact on perishable goods.
 
-Use sales trends to create demand forecasting features (like moving averages, seasonal patterns).
-Combine stock level data from sensors with sales data to estimate depletion rates.
-Incorporate external factors like temperature and its impact on perishable goods.
-Modeling:
+3. Modeling:
+- Use time-series analysis (e.g., ARIMA or Prophet) for short-term stock predictions.
+- Develop machine learning models (e.g., Random Forest, XGBoost, or LSTM networks) to predict future stock levels based on sales and sensor data.
 
-Use time-series analysis (e.g., ARIMA or Prophet) for short-term stock predictions.
-Develop machine learning models (e.g., Random Forest, XGBoost, or LSTM networks) to predict future stock levels based on sales and sensor data.
-Validation:
+4. Validation:
+- Backtest models on historical data, adjusting hyperparameters and retraining models as needed.
+- Compare model predictions to real data to evaluate accuracy.
 
-Backtest models on historical data, adjusting hyperparameters and retraining models as needed.
-Compare model predictions to real data to evaluate accuracy.
-Continuous Improvement:
+5. Continuous Improvement:
+- Build a pipeline for real-time data ingestion and continuous model updating.
+- Add monitoring to track model performance and retrain as new data becomes available.
 
-Build a pipeline for real-time data ingestion and continuous model updating.
-Add monitoring to track model performance and retrain as new data becomes available.
-Step 3: Communication - PowerPoint Slide
+### Step 3: Communication - PowerPoint Slide
 To create a concise and business-friendly slide:
 
-Slide Title: Strategic Plan for Stock Prediction Using Sales and Sensor Data
+#### Slide Title: Strategic Plan for Stock Prediction Using Sales and Sensor Data
 Objective: Accurately predict hourly stock levels to optimize procurement.
 
 Key Data Sources:
+- Sales Data: Historical sales, pricing, promotions, demand trends.
+- Sensor Data: Temperature in storage, real-time stock levels in refrigerators/freezers.
+- Additional Data: Supplier delivery schedules, product spoilage rates.
 
-Sales Data: Historical sales, pricing, promotions, demand trends.
-Sensor Data: Temperature in storage, real-time stock levels in refrigerators/freezers.
-Additional Data: Supplier delivery schedules, product spoilage rates.
-Plan:
+## Plan:
+1. Data Integration & Preprocessing: Clean, combine, and align sales and sensor data.
+2. Feature Engineering: Create features based on sales trends, stock levels, and environmental factors.
+3. Modeling:
+  - Time-Series Analysis: Use ARIMA or similar methods for short-term forecasts.
+  - Machine Learning: Leverage advanced models (e.g., LSTM) for multi-variate predictions.
+4. Validation: Backtest models, adjust based on historical accuracy.
+5. Deployment: Implement a real-time pipeline for continuous model updating and monitoring.
 
-Data Integration & Preprocessing: Clean, combine, and align sales and sensor data.
-Feature Engineering: Create features based on sales trends, stock levels, and environmental factors.
-Modeling:
-Time-Series Analysis: Use ARIMA or similar methods for short-term forecasts.
-Machine Learning: Leverage advanced models (e.g., LSTM) for multi-variate predictions.
-Validation: Backtest models, adjust based on historical accuracy.
-Deployment: Implement a real-time pipeline for continuous model updating and monitoring.
-Outcome: Improved procurement strategies based on accurate stock depletion predictions, reducing waste and ensuring timely restocking.
+## Outcome: Improved procurement strategies based on accurate stock depletion predictions, reducing waste and ensuring timely restocking.
+
+[Task 2 Project Folder](https://github.com/MikkoDT/Cognizant_AI_Experience_Program/tree/main/Task2)
+
+## Task 3
+
 
