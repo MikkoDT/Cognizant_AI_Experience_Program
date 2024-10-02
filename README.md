@@ -22,3 +22,5 @@ In this project, I worked on a data science simulation for Cognizant, focusing o
 - Recommended more granular customer segmentation for targeted promotions.
 - Suggested tracking external factors (e.g., seasonal trends, supplier lead times) to improve stock predictions.
 - Emphasized the need for integrating real-time IoT sensor data into stock management to dynamically adjust inventory levels.
+
+[Project Folder](https://github.com/MikkoDT/Cognizant_AI_Experience_Program/tree/main/Task1)
